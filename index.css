@@ -228,8 +228,7 @@ main.show {
 .close:focus {
   cursor: pointer;
   transform: scale(1.2);
-  color: #b19cd8;
-  /* color: #F8F3A6; */
+  color: #F8F3A6;
 }
 
 .highlight-y:hover,
