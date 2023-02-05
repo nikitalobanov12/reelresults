@@ -9,30 +9,34 @@
     <script src="index.js" defer></script>
   </head>
   <body>
-      <section id="background"></section>
+    <section id="background"></section>
     <main>
+      <button class="contact-button hidden">
+          
+        <img src="./assets/mail-icon.png" alt="contact-button-image">
+      </button>
       <section id="landing-page">
         <header>
           <img
-            class="logo contact-button"
+            class="logo hidden"
             src="./assets/IMG_8447.PNG"
             alt="reel results logo"
           />
-          <h1 class="title highlight-y">SHORT-FORM CONTENT IS</h1>
-          <h1 class="title highlight-p">THE FUTURE.</h1>
+          <h1 class="title highlight-y hidden">SHORT-FORM CONTENT IS</h1>
+          <h1 class="title highlight-p hidden">THE FUTURE.</h1>
         </header>
         <div class="landing-page__body">
           <div class="landing-page__body__text">
-            <h2 class="subtitle">
+            <h2 class="subtitle hidden">
               WITH ONLY <span class="highlight-p">3 HOURS</span> OF YOUR
               MONTH...
             </h2>
-            <h2 class="subtitle">WE CAN MAKE YOU UP TO 60 CLIPS.</h2>
-            <p class="landing-para">
+            <h2 class="subtitle hidden">WE CAN MAKE YOU UP TO 60 CLIPS.</h2>
+            <p class="landing-para hidden">
               We do everything for you. All you need to do is hit record.
             </p>
-            <p class="landing-para">Here's how it works</p>
-            <div class="pointer-wrapper"><p class="pointer">👇</p></div>
+            <p class="landing-para hidden">Here's how it works</p>
+            <div class="pointer-wrapper"><p class="pointer hidden">👇</p></div>
           </div>
 
           <iframe
@@ -45,38 +49,44 @@
         </div>
       </section>
       <section id="about">
-        <h1 class="about-title highlight-y">HOW IT WORKS</h1>
-        <h2 class="about-subtitle">Simple 3-Step Process</h2>
-        <h1 class="about-title highlight-y">STEP 1</h1>
-        <h2 class="about-subtitle highlight-p">
+        <h1 class="about-title highlight-y hidden">HOW IT WORKS</h1>
+        <h2 class="about-subtitle hidden">Simple 3-Step Process</h2>
+        <h1 class="about-title highlight-y hidden">STEP 1</h1>
+        <h2 class="about-subtitle highlight-p hidden">
           IDENTIFYING YOUR GOALS AND TARGET AUDIENCE
         </h2>
-        <img src="./assets/Loupe.png" alt="loupe" class="about__picture" />
-        <p class="about__para">
+        <img
+          src="./assets/Loupe.png"
+          alt="loupe"
+          class="about__picture hidden"
+        />
+        <p class="about__para hidden">
           Only YOU know the best for YOUR business, I just gotta be introduced
           into your world. Together we identify your goals and target audience
           so that I can do my job and create the IDEAL content.
         </p>
-        <h1 class="about-title highlight-y">STEP 2</h1>
-        <h2 class="about-subtitle highlight-p">SCRIPTING AND SHOOTING</h2>
+        <h1 class="about-title highlight-y hidden">STEP 2</h1>
+        <h2 class="about-subtitle highlight-p hidden">
+          SCRIPTING AND SHOOTING
+        </h2>
         <img
           src="./assets/writinghandpng.png"
           alt="writinghand"
-          class="about__picture"
+          class="about__picture hidden"
         />
-        <p class="about__para">
+        <p class="about__para hidden">
           Based on your target audience, I use my ELITE copywriting skills to
           write you scripts that will last you for months. All you need to do is
           record for about 2 hours a month.
         </p>
-        <h1 class="about-title highlight-y">STEP 3</h1>
-        <h2 class="about-subtitle vins highlight-p">EDITING</h2>
+        <h1 class="about-title highlight-y hidden">STEP 3</h1>
+        <h2 class="about-subtitle vins highlight-p hidden">EDITING</h2>
         <img
           src="./assets/downlooad-removebg-preview.png"
           alt="checkmark"
-          class="about__picture"
+          class="about__picture hidden"
         />
-        <p class="about__para">
+        <p class="about__para hidden">
           After finishing all your clips, you will send them to me and I'll use
           my editing skills to add the finishing touches. People's eyes will be
           stuck to the screen as they are stimulated by the captions, graphics
@@ -84,9 +94,9 @@
         </p>
       </section>
       <section id="examples">
-        <h1 class="examples__title highlight-y">EXAMPLE OF OUR WORK</h1>
+        <h1 class=" hidden examples__title highlight-y">EXAMPLE OF OUR WORK</h1>
         <iframe
-          class="youtube-reels"
+          class="youtube-reels hidden"
           width="316"
           height="562"
           src="https://www.youtube.com/embed/CECYRVSDOzg"
@@ -95,41 +105,53 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-        <h2 class="examples__subtitle">
+        <h2 class="examples__subtitle hidden">
           For real though... this is the future.
         </h2>
-        <p class="examples__para">
+        <p class="examples__para hidden">
           This is the best opportunity to reach that next level.
         </p>
-        <p class="examples__para">
+        <p class="examples__para hidden">
           With 30 minutes of your time, we can really work some miracles.
         </p>
       </section>
+       <footer>
+      <p class="footer__para">© 2023 Reel Results</p>
+    </footer>
     </main>
-    <section id="contact" >
+    <section id="contact">
       <div class="contact__wrapper">
-        <span class="close">
-            &times;
-        </span>
+        <span class="close"> &times; </span>
         <h1 class="contact__title">Ready to see some Results?</h1>
         <h1 class="contact__title highlight-y">Let's talk!</h1>
-        <p class="contact__para">Reveal the power of short-form content and book a call with us.</p>
-          <!-- Calendly inline widget begin -->
-          <div
-            class="calendly-inline-widget" 
-            height="1000"
-            data-url="https://calendly.com/nikitaalobanovv/30min?hide_gdpr_banner=1&background_color=1a1a1a&text_color=ffffff&primary_color=f8f3a6"
-          ></div>
-          <script
-            type="text/javascript"
-            src="https://assets.calendly.com/assets/external/widget.js"
-            async
-          ></script>
-          <!-- Calendly inline widget end -->
-          <a href="https://twitter.com/beanvarela" target="_blank" class="twitterlink">
-            <img src="./assets/twitter-icon.svg" class="twitter-icon" alt="twitter">
-          </a>
-          </div>
-        </section>
+        <p class="contact__para">
+          Reveal the power of short-form content and book a call with us.
+        </p>
+        <!-- Calendly inline widget begin -->
+        <div
+          class="calendly-inline-widget"
+          height="1000"
+          data-url="https://calendly.com/reelresultsca/30min?hide_gdpr_banner=1&background_color=242424&text_color=ffffff&primary_color=f8f3a6"
+        ></div>
+        <script
+          type="text/javascript"
+          src="https://assets.calendly.com/assets/external/widget.js"
+          async
+        ></script>
+        <!-- Calendly inline widget end -->
+        <a
+          href="https://twitter.com/beanvarela"
+          target="_blank"
+          class="twitterlink"
+        >
+          <img
+            src="./assets/twitter-icon.svg"
+            class="twitter-icon"
+            alt="twitter"
+          />
+        </a>
+      </div>
+    </section>
+   
   </body>
 </html>
