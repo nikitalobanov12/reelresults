@@ -301,14 +301,16 @@ background: transparent;
 border: none;
 z-index: 1;
 transition: all 0.3s ease;
+display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .contact-button img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
+  width: 100px;
+  border-radius: 50%;
   transition: all 0.3s ease;
   animation: breathe 3s infinite alternate;
+
 }
 
 .contact-button:hover{
@@ -359,16 +361,31 @@ color: #fff;
   }
   #contact {
     padding: 32px;
-    margin-top: 48px;
+    margin-top: 24px;
   }
   .close {
     font-size: 5em;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(0, -60%);
+    transform: translate(0, -50%);
   }
-  .contact__button{
+  .close:hover{
+    transform: scale(1.2) translate(0, -50%);
+  }
+  .close:active{
+    transform: scale(0.5) translate(0, -50%);
+  }
+  .contact-button{
     background: #242424;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 8px;
+    
   }
+  .twitterlink{
+    margin-top:16px;
+  }
+  
 }
