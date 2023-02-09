@@ -21,7 +21,7 @@ hiddenVideoObserver.observe(hiddenVideo);
 const highlightY = document.querySelectorAll(".highlight-y");
 const highlightP = document.querySelectorAll(".highlight-p");
 const contactButton = document.querySelector(".contact-button");
-
+const footerButton = document.querySelector(".footer-button");
 
 const contactModal = document.querySelector("#contact");
 const main = document.querySelector("main");
@@ -38,10 +38,16 @@ highlightP.forEach(button => {
         main.classList.add("show");
     });
 });
-contactButton.addEventListener("click", function () {   
+contactButton.addEventListener("click", function () {
     contactModal.classList.add("show");
     main.classList.add("show");
 });
+footerButton.addEventListener("click", function () {
+    contactModal.classList.add("show");
+    main.classList.add("show");
+});
+
+
 
 
 
@@ -53,7 +59,7 @@ contactButton.addEventListener("click", function () {
 const close = document.querySelector(".close");
 close.addEventListener("click", function () {
     contactModal.classList.remove("show");
-    main.classList.remove("show");
+    main.classList.remove("show");g
 }
 );
 
@@ -77,5 +83,59 @@ hidden.forEach(hidden => {
     hiddenObserver.observe(hidden);
 }
 );
+
+
+const examples = document.querySelectorAll(".example-video");
+let i = 1;
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+//when the next button is clicked, increment i by 1 and add the "display" class to the i'th element
+next.addEventListener("click", function () {
+    //left slide moves to the middle
+    if (i === 0)
+       examples[ examples.length - 1].classList.add("display");
+    else
+        examples[i - 1].classList.add("display");
+    //middle slide moves to the right 
+    examples[i].classList.add("end");
+    examples[i].classList.remove("display");
+
+    //right slide moves to the left
+    if (i === examples.length - 1)
+        examples[0].classList.remove("end");
+    else
+        examples[i + 1].classList.remove("end");
+    i--;
+    if(i < 0){
+        i = examples.length - 1;
+    }
+}
+);
+
+//when the prev button is clicked, decrement i by 1 and add the "display" class to the i'th element
+prev.addEventListener("click", function () {
+    //left slide moves to the right
+    if (i === 0)
+        examples[examples.length - 1].classList.add("end");
+    else
+        examples[i - 1].classList.add("end");
+    //middle slide moves to the left
+    examples[i].classList.remove("display");
+    //right slide moves to the middle
+    if (i === examples.length - 1) {
+        examples[0].classList.remove("end");
+        examples[0].classList.add("display");
+    }
+    else {
+        examples[i + 1].classList.remove("end");
+        examples[i + 1].classList.add("display");
+    }
+    i++;
+    if (i > examples.length - 1) {
+        i = 0;
+    }
+    }
+);
+
 
 
