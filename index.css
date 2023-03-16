@@ -75,16 +75,7 @@ section {
   transform: translateY(10%);
   transition: all 0.5s ease-in-out;
 }
-.hidden {
-  opacity: 0;
-  transform: translateY(10%);
-  transition: all 0.5s ease-in-out;
-}
 
-.show {
-  opacity: 1;
-  transform: translateY(0%);
-}
 
 .landing-page__body__text {
   align-self: center;
@@ -219,6 +210,7 @@ a {
   width: 100%;
   transform: translateY(250%);;
   position: absolute;
+  z-index:0;
 }
 
 .example-video {
@@ -369,6 +361,15 @@ main.show {
   transition: all 0.3s ease;
   animation: breathe 3s infinite alternate;
 }
+.CTA-hook{
+  font-size: calc(2em + 2vi);
+  font-weight: 700;
+  margin: 1em auto 0;
+  text-align: center;
+  text-shadow: 0 0 5px #ffffff;
+  transition: all 0.3s ease;
+}
+
 .footer-button{
   margin-top: 16px;
   padding: 16px;
@@ -379,6 +380,7 @@ main.show {
   font-weight: 700;
   border-radius: 8px;
   transition: all 1s ease;
+  box-shadow: 0 0 10px #f8f3a6;
 }
 .footer-button:hover{
   cursor: pointer;
@@ -410,6 +412,16 @@ footer {
   justify-content: center;
   text-align: center;
   color: #fff;
+}
+.hidden {
+  opacity: 0;
+  transform: translateY(10%);
+  transition: all 0.5s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0%);
 }
 
 @media (max-width: 768px) {

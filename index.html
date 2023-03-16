@@ -11,7 +11,7 @@
     />
     <link rel="icon" href="./assets/favicon.webp" type="image/x-icon" />
     <link rel="stylesheet" href="index.css" />
-    <script src="index.js" defer></script>
+    
   </head>
   <body>
     <section id="background"></section>
@@ -45,10 +45,12 @@
 
           <iframe
             class="vimeo-player hidden-video"
-            title="vimeo into video"
-            src="https://player.vimeo.com/video/793936383?h=9216c78c61"
+            title="vimeo intro video"
+            src="https://player.vimeo.com/video/805416692?autoplay=0&dnt=1"
             frameborder="0"
             allowfullscreen
+            name="vimeo-player"
+            loading="lazy"
           ></iframe>
         </div>
       </section>
@@ -65,9 +67,7 @@
           class="about__picture hidden"
         />
         <p class="about__para hidden">
-          Only YOU know the best for YOUR business, I just gotta be introduced
-          into your world. Together we identify your goals and target audience
-          so that I can do my job and create the IDEAL content.
+          Only YOU truly understand your vision, so I need to be introduced into your world before we decide if I can help you or not. If it's a good fit, we move on to #2.
         </p>
         <h1 class="about-title highlight-y hidden">STEP 2</h1>
         <h2 class="about-subtitle highlight-p hidden">
@@ -79,8 +79,12 @@
           class="about__picture hidden"
         />
         <p class="about__para hidden">
-          Based on your target audience, I will write you personalized scripts
-          to suit YOUR brand and YOUR personality.
+          There are three different ways we can go about this. <br> <br>
+1) I write a script for your videos, and you can record on your own time. <br> <br>
+2) We hop on a video call together and record it,
+where I ask you the right questions and I turn your answers into content. <br> <br>
+3) If you're comfortable with your own scripts, that's fine!
+We can skip over this step and I can just carry out on step #3
         </p>
         <h1 class="about-title highlight-y hidden">STEP 3</h1>
         <h2 class="about-subtitle vins highlight-p hidden">EDITING</h2>
@@ -90,51 +94,54 @@
           class="about__picture hidden"
         />
         <p class="about__para hidden">
-          After finishing all your clips, you will send them to me and I'll use
-          my editing skills to add the finishing touches. People's eyes will be
-          stuck to the screen as they are stimulated by the captions, graphics
-          and emoji's.
+          After finishing all your clips, send them to me and I'll use my creative editing vision to refine your content into a stimulant masterpiece, ready for the world to see.
         </p>
       </section>
       <section id="examples">
         <h1 class="hidden examples__title highlight-y">EXAMPLES OF OUR WORK</h1>
-        <div class="example-wrapper">
+        <div class="example-wrapper hidden">
           <iframe
             width="438"
             height="779"
-            src="https://www.youtube.com/embed/DZqN1mwT3Ng"
+            src="https://www.youtube.com/embed/d1Ejk8pcNBg"
             title="short form content example"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
             class="example-video"
+            loading="lazy"
+            name="example-video 1"
           ></iframe>
           <iframe
             width="438"
             height="779"
-            src="https://www.youtube.com/embed/CECYRVSDOzg"
+            src="https://www.youtube.com/embed/kjG9hM3mFcY?feature=share"
             title="short form content example"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
             class="example-video display"
+            loading="lazy"
+            name="example-video 2"
           ></iframe>
           <iframe
             width="438"
             height="779"
-            src="https://www.youtube.com/embed/UExWPQQHDVE"
+            src="https://www.youtube.com/embed/efnEQAdt_NM?feature=share"
             title="short form content example"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
             class="example-video end"
+            loading="lazy"
+            name="example-video 3"
           ></iframe>
         </div>
         <div class="buttons">
-          <button class="prev">
+          <button class="prev hidden" type="button">
            &#8249;
           </button>
-          <button class="next">
+          <button class="next hidden" type="button">
            &#8250;
           </button>
         </div>
@@ -147,7 +154,12 @@
         <p class="examples__para hidden">
           With 30 minutes of your time, we can really work some miracles.
         </p>
-        <button class="footer-button">DON'T GET LEFT BEHIND</button>
+        
+        <h1 class="CTA-hook">
+          Don't get left behind
+        </h1>
+        
+        <button class="footer-button hidden">Book a FREE call</button>
       </section>
       <footer>
         <p class="footer__para">© 2023 Reel Results
@@ -175,9 +187,10 @@
         ></script>
         <!-- Calendly inline widget end -->
         <a
-          href="https://twitter.com/beanvarela"
+          href="https://twitter.com/fabianvarela119"
           target="_blank"
           class="twitterlink"
+          rel="noopener noreferrer"
         >
           <img
             src="./assets/twitter-icon.svg"
@@ -187,5 +200,6 @@
         </a>
       </div>
     </section>
+    <script src="index.js" defer></script>
   </body>
 </html>

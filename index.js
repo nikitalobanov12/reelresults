@@ -90,7 +90,7 @@ let i = 1;
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 //when the next button is clicked, increment i by 1 and add the "display" class to the i'th element
-next.addEventListener("click", function () {
+prev.addEventListener("click", function () {
     //left slide moves to the middle
     if (i === 0)
        examples[ examples.length - 1].classList.add("display");
@@ -113,7 +113,7 @@ next.addEventListener("click", function () {
 );
 
 //when the prev button is clicked, decrement i by 1 and add the "display" class to the i'th element
-prev.addEventListener("click", function () {
+next.addEventListener("click", function () {
     //left slide moves to the right
     if (i === 0)
         examples[examples.length - 1].classList.add("end");
